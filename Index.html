@@ -47,6 +47,38 @@
         </section>
     </main>
 
+<div id="submission-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>File a New Mission Report</h2>
+        
+        <form id="report-form">
+            <label for="location-name">Target Location Name:</label>
+            <input type="text" id="location-name" name="location-name" required>
+
+            <label for="photo-upload">Upload Evidence (Optional):</label>
+            <input type="file" id="photo-upload" name="photo-upload" accept="image/*">
+
+            <label for="access-score">Access for Agents (1-5):</label>
+            <input type="range" id="access-score" name="access-score" min="1" max="5" value="3">
+
+            <label for="biohazard-score">Biohazard Level (1-5):</label>
+            <input type="range" id="biohazard-score" name="biohazard-score" min="1" max="5" value="3">
+
+            <label for="equipment-score">Field Equipment (1-5):</label>
+            <input type="range" id="equipment-score" name="equipment-score" min="1" max="5" value="3">
+            
+            <label for="dropzone-score">The Drop Zone (1-5):</label>
+            <input type="range" id="dropzone-score" name="dropzone-score" min="1" max="5" value="3">
+
+            <label for="field-notes">Field Notes:</label>
+            <textarea id="field-notes" name="field-notes" rows="4" placeholder="What's the intel, Agent?"></textarea>
+
+            <button type="submit" class="submit-report-button">TRANSMIT REPORT</button>
+        </form>
+    </div>
+</div>
+
     <footer>
         <p>&copy; 2025 Nappy Ops - For Dads, By Dads.</p>
     </footer>
