@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nappy Ops - Mission Control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nappy Ops</h1>
+        <p class="tagline">Declassifying Nappy Change Deployment Zones for Dads Everywhere.</p>
+    </header>
+
+    <main>
+        <section id="mission-hub">
+            <div class="search-container">
+                <h2><span class="icon">&#128269;</span>Search the Intel Database</h2>
+                <input type="text" id="search-bar" placeholder="Enter Postcode, Town, or Establishment Name...">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="cta-container">
+                <button id="file-report-button">FILE A MISSION REPORT</button>
+            </div>
+        </section>
+
+        <section id="live-ops">
+            <h2>Live Operations Map</h2>
+            <div id="map"></div>
+        </section>
+
+        <section id="recent-intel">
+            <h2>Highest Rated NCDZs</h2>
+            <div class="intel-card">
+                <h3>The Old Plough, Stapleford</h3>
+                <p class="rank double-o-dad">Double-O-Dad</p>
+                <p class="snippet">"Unbelievable facility. Clean, spacious, and even had nappy sacks. The gold standard."</p>
+            </div>
+            <div class="intel-card">
+                <h3>Stapleford Library & Hub</h3>
+                <p class="rank station-chief">Station Chief</p>
+                <p class="snippet">"Very reliable. In the disabled loo, but clean and has everything you need."</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nappy Ops - For Dads, By Dads.</p>
+    </footer>
+</body>
+</html>
